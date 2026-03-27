@@ -1,79 +1,81 @@
 ---
 name: concept-research
 description: |
-  调查某个概念是否已被实现及实现现状。使用多语言关键词、多引擎交叉验证、多维度搜索。
-  当用户提出一个想法或概念时，通过系统化的搜索流程调研其现有解决方案。
-  触发条件：用户询问"有没有人做过"、"查一下xxx的现状"、"调研xxx"等。
+  Research whether a concept has been implemented and its current state. Use multi-language keywords, multi-engine cross-validation, and multi-dimensional search.
+  When user proposes an idea or concept, systematically research its existing solutions through a structured search process.
+  Trigger: User asks "has anyone done this", "check the status of xxx", "research xxx", etc.
 ---
 
-# Concept Research - 概念现状调研
+# Concept Research - Concept Status Research | 概念现状调研
+
+Research whether a concept has been implemented and what it looks like. Search thoroughly and output a summary list.
 
 调查一个概念是否已被实现、做成什么样子。彻底搜索，输出摘要清单。
 
-## 工作流
+## Workflow | 工作流
 
-### 阶段 1: 概念澄清（对话）
+### Phase 1: Concept Clarification (Dialogue) | 阶段 1: 概念澄清（对话）
 
-通过多轮对话明确：
-- 用户想做什么
-- 核心功能是什么
-- 目标用户是谁
-- 差异化期望是什么
+Through multi-turn dialogue clarify: | 通过多轮对话明确：
+- What user wants to do | 用户想做什么
+- Core functionality | 核心功能是什么
+- Target users | 目标用户是谁
+- Differentiation expectations | 差异化期望是什么
 
-**产出**: 一句话概念定义
+**Output**: One-sentence concept definition | **产出**: 一句话概念定义
 
-### 阶段 2: 关键词拆解
+### Phase 2: Keyword Breakdown | 阶段 2: 关键词拆解
 
-基于概念定义，拆解为多组关键词：
+Based on concept definition, break down into multiple keyword groups: | 基于概念定义，拆解为多组关键词：
 
-1. 核心词变体 - 同义词、近义词、不同表述
-2. 技术栈词 - 涉及的技术、框架、协议
-3. 场景词 - 使用场景、解决的问题
-4. 组合词 - 核心词 + 技术/场景
+1. Core word variants - synonyms, near-synonyms, different expressions | 核心词变体 - 同义词、近义词、不同表述
+2. Tech stack words - involved technologies, frameworks, protocols | 技术栈词 - 涉及的技术、框架、协议
+3. Scenario words - use cases, problems to solve | 场景词 - 使用场景、解决的问题
+4. Combined words - core word + tech/scenario | 组合词 - 核心词 + 技术/场景
 
-每组生成中英文版本。
+Generate Chinese and English versions for each group. | 每组生成中英文版本。
 
-### 阶段 3: 广度搜索
+### Phase 3: Broad Search | 阶段 3: 广度搜索
 
-使用 searxng-search 逐批搜索：
+Search using searxng-search batch by batch: | 使用 searxng-search 逐批搜索：
 
-1. 每组关键词搜索 1-2 页结果
-2. 记录所有相关链接
-3. 根据标题/摘要初步标记相关性
+1. Search 1-2 pages for each keyword group | 每组关键词搜索 1-2 页结果
+2. Record all relevant links | 记录所有相关链接
+3. Preliminary relevance marking based on title/abstract | 根据标题/摘要初步标记相关性
 
-时间过滤（如搜索引擎支持）:
-- 五年之前、两年之前、一年之前、三个月之前、最近三个月
+Time filter (if search engine supports): | 时间过滤（如搜索引擎支持）:
+- Five years ago, two years ago, one year ago, three months ago, recent three months | 五年之前、两年之前、一年之前、三个月之前、最近三个月
 
-### 阶段 4: 深度探索
+### Phase 4: Deep Exploration | 阶段 4: 深度探索
 
-从高相关性结果中挑选 3-5 个进行深度探索：
+From high-relevance results, select 3-5 for deep exploration: | 从高相关性结果中挑选 3-5 个进行深度探索：
 
-1. Web 页面: 使用 web_fetch 抓取内容
-2. GitHub Repo: 克隆到本地，阅读 README
-3. PDF/论文: 下载阅读
+1. Web pages: Use web_fetch to grab content | Web 页面: 使用 web_fetch 抓取内容
+2. GitHub Repo: Clone locally, read README | GitHub Repo: 克隆到本地，阅读 README
+3. PDF/Papers: Download and read | PDF/论文: 下载阅读
 
-探索内容记录：
-- 核心功能
-- 技术实现
-- 优缺点
-- 与用户概念的异同
+Record exploration content: | 探索内容记录：
+- Core functionality | 核心功能
+- Technical implementation | 技术实现
+- Pros and cons | 优缺点
+- Similarities/differences with user concept | 与用户概念的异同
 
-### 阶段 5: 输出报告
+### Phase 5: Output Report | 阶段 5: 输出报告
 
-生成摘要清单：
+Generate summary list: | 生成摘要清单：
 
-| 字段 | 说明 |
-|------|------|
-| 链接 | 原始 URL |
-| 概述 | 是什么，做了什么 |
-| 基本思路 | 核心技术方案 |
-| 相同点 | 与用户概念的共性 |
-| 不同点 | 与用户概念的差异 |
-| 分析 | 机会点、改进空间 |
+| Field | Description | 说明 |
+|-------|-------------|------|
+| Link | Original URL | 链接 |
+| Overview | What it is, what it does | 概述 |
+| Basic Approach | Core technical solution | 基本思路 |
+| Similarities | Common points with user concept | 相同点 |
+| Differences | Differences from user concept | 不同点 |
+| Analysis | Opportunities, improvement space | 分析 |
 
-## 项目目录
+## Project Directory | 项目目录
 
-所有文件保存在：`projects/research-{uuid}/`
+All files saved in: `projects/research-{uuid}/` | 所有文件保存在：`projects/research-{uuid}/`
 
 ```
 projects/research-{uuid}/
@@ -89,13 +91,13 @@ projects/research-{uuid}/
 └── report.md
 ```
 
-## 搜索工具
+## Search Tools | 搜索工具
 
-优先使用 searxng-search。如 SearXNG 未部署，可使用 ddg-search。
+Priority: searxng-search. If SearXNG not deployed, can use ddg-search. | 优先使用 searxng-search。如 SearXNG 未部署，可使用 ddg-search。
 
 ---
 
-## 相关文档
+## Related Documentation | 相关文档
 
 - searxng-search skill
 - skill-creator skill
