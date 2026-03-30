@@ -1,7 +1,7 @@
 ---
 name: kinema-concept-research
 displayName: "Kinema's Concept Re-Search"
-version: 1.0.2
+version: 1.0.3
 description: |
   Research whether a concept has been implemented and its current state. Use multi-language keywords, multi-engine cross-validation, and multi-dimensional search.
   When user proposes an idea or concept, systematically research its existing solutions through a structured search process.
