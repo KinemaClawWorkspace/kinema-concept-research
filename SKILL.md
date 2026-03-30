@@ -1,5 +1,7 @@
 ---
 name: kinema-concept-research
+displayName: "Kinema's Concept Re-Search"
+version: 1.0.0
 description: |
   Research whether a concept has been implemented and its current state. Use multi-language keywords, multi-engine cross-validation, and multi-dimensional search.
   When user proposes an idea or concept, systematically research its existing solutions through a structured search process.
@@ -7,6 +9,9 @@ description: |
 ---
 
 # Concept Research - Concept Status Research | 概念现状调研
+
+- **Author**: [LeeShunEE](https://github.com/LeeShunEE)
+- **Organization**: [KinemaClawWorkspace](https://github.com/KinemaClawWorkspace)
 
 Research whether a concept has been implemented and what it looks like. Search thoroughly and output a summary list.
 
