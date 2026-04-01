@@ -10,6 +10,7 @@ description: |
 # Concept Research - 概念现状调研
 
 > **ClawHub**: https://clawhub.ai/leeshunee/kinema-concept-research | `clawhub install kinema-concept-research`
+> **GitHub**: https://github.com/KinemaClawWorkspace/kinema-concept-research
 
 调查一个概念是否已被实现、做成什么样子。彻底搜索，输出摘要清单。
 
