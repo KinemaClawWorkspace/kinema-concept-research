@@ -1,0 +1,21 @@
+{
+  "name": "kinema-concept-research",
+  "displayName": "Kinema's Concept Re-Search",
+  "version": "1.0.4",
+  "description": "Research whether a concept has been implemented and its current state. Use multi-language keywords, multi-engine cross-validation, and multi-dimensional search.",
+  "author": {
+    "name": "LeeShunEE",
+    "url": "https://github.com/LeeShunEE"
+  },
+  "homepage": "https://github.com/KinemaClawWorkspace/kinema-concept-research",
+  "repository": "https://github.com/KinemaClawWorkspace/kinema-concept-research",
+  "license": "GPL-3.0",
+  "keywords": [
+    "research",
+    "concept",
+    "search",
+    "searxng",
+    "analysis",
+    "multi-engine"
+  ]
+}

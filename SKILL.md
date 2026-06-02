@@ -14,6 +14,14 @@ description: |
 - **Organization**: [KinemaClawWorkspace](https://github.com/KinemaClawWorkspace)
 - **GitHub**: https://github.com/KinemaClawWorkspace/kinema-concept-research
 
+## ⚠️ Before First Use | 首次使用必读
+
+**首次使用此 skill 前，必须先读取 [references/ONBOARDING.md](references/ONBOARDING.md) 完成环境配置。**
+
+- **首次配置** → 读取 references/ONBOARDING.md 完成全部步骤
+- **环境不可用**（searxng-search 未安装、搜索失败）→ 读取 references/ONBOARDING.md Troubleshooting 排查修复
+- **配置完成后** → 直接使用下方工作流
+
 Research whether a concept has been implemented and what it looks like. Search thoroughly and output a summary list.
 
 调查一个概念是否已被实现、做成什么样子。彻底搜索，输出摘要清单。
