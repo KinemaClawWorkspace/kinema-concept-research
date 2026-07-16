@@ -18,7 +18,7 @@
 
 ## 使用方式
 
-本 skill 为 OpenClaw/Claude Code 技能，安装后可通过对话触发：
+本 skill 支持 Codex、Claude Code 和 OpenClaw，安装后可通过对话触发：
 
 ```
 有没有人做过 xxx？
@@ -27,6 +27,15 @@
 ```
 
 依赖 [searxng-search-cli](https://github.com/KinemaClawWorkspace/searxng-search-cli) 作为搜索工具。
+
+## Codex 安装
+
+```powershell
+codex plugin marketplace add https://github.com/KinemaClawWorkspace/kinema-skills-marketplace.git
+codex plugin add kinema-concept-research@kinema-skills-marketplace
+```
+
+同时安装 `searxng-search-cli`，然后新开一个 Codex 对话。
 
 ## 项目输出结构
 

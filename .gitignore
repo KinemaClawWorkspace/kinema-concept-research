@@ -24,4 +24,8 @@ Thumbs.db
 
 # ClawHub / OpenClaw CLI cache & artifacts
 .clawhub/
-skills/
+skills/*
+!skills/kinema-concept-research/
+!skills/kinema-concept-research/SKILL.md
+!skills/kinema-concept-research/agents/
+!skills/kinema-concept-research/agents/openai.yaml

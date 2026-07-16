@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kinema Concept Research"
+  short_description: "通过多语言与多来源搜索系统调研概念、竞品和现有实现"
+  default_prompt: "Use $kinema-concept-research to investigate existing implementations of this concept."

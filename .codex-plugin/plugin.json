@@ -1,0 +1,22 @@
+{
+  "name": "kinema-concept-research",
+  "version": "1.0.4",
+  "description": "通过多语言关键词、多来源交叉验证和深度探索调研概念的现有实现与发展状态。",
+  "author": { "name": "LeeShunEE", "url": "https://github.com/LeeShunEE" },
+  "homepage": "https://github.com/KinemaClawWorkspace/kinema-concept-research",
+  "repository": "https://github.com/KinemaClawWorkspace/kinema-concept-research",
+  "license": "GPL-3.0",
+  "keywords": ["research", "concept", "search", "analysis", "multi-engine"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Kinema Concept Research",
+    "shortDescription": "系统调研概念、竞品和现有实现。",
+    "longDescription": "先澄清概念，再生成中英文关键词，通过多来源广度搜索与高相关结果深度探索，输出带链接、异同和机会分析的报告。",
+    "developerName": "KinemaClawWorkspace",
+    "category": "Research",
+    "capabilities": ["Interactive", "Write"],
+    "websiteURL": "https://github.com/KinemaClawWorkspace/kinema-concept-research",
+    "defaultPrompt": ["调研这个概念是否已有实现。", "分析这个想法的现有竞品。", "调查这个技术方向的当前状态。"],
+    "brandColor": "#8B5CF6"
+  }
+}
