@@ -1,6 +1,6 @@
 {
   "name": "kinema-concept-research",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "通过多语言关键词、多来源交叉验证和深度探索调研概念的现有实现与发展状态。",
   "author": { "name": "LeeShunEE", "url": "https://github.com/LeeShunEE" },
   "homepage": "https://github.com/KinemaClawWorkspace/kinema-concept-research",
